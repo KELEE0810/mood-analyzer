@@ -35,7 +35,7 @@ def load_data():
     df['Emotion'] = df['Raw_Emotion'].str.strip().str.split(' ').str[0]
     df['Emoji'] = df['Raw_Emotion'].str.strip().str.split(' ').str[1]
     df['Timestamp'] = pd.to_datetime(df['Date'] + ' ' + df['Time'])
-    mapping = {'Excited':3, 'Happy': 2, 'Peace':1, 'Tired':-1, 'Anxious':-2, 'Angry':-3}
+    mapping = {'Excited':3, 'Happy': 2, 'Peace':1, 'Tired':0, 'Anxious':-1, 'Angry':-2}  # You can score mood as you want (The larger scale is, the more dramatic graph becomes)
     df['Score'] = df['Emotion'].map(mapping)
     df = df.reset_index()
     return df
