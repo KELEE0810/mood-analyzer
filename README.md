@@ -76,6 +76,9 @@ For analysis: python3 main.py
 
 ## 3. Deployment via Streamlit Community Cloud
 
+![WebDashboard](images/webimg.png)
+> *Please ignore Korean. You'll see it in English.*
+
 You can host this dashboard for free using [Streamlit Community Cloud](https://streamlit.io/cloud), syncing it directly with your GitHub repository.
 
 ### 1. Push to GitHub
@@ -108,6 +111,9 @@ Update the url variable in main.py with your Google Sheets CSV URL:
 ---
 
 ## 4. Tips for Smartphone Use 
+
+![iphoneuse](images/cap1.jpg)
+
 ### For iOS (iPhone/iPad) via Shortcuts app
 1. Open the **Shortcuts** app.
 2. Tap the **+** icon (Top right) > **Add Action**.
